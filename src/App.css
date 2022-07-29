@@ -1,0 +1,142 @@
+/* =========================================================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&family=Sriracha&display=swap');
+
+
+:root{
+  --gold:#F1C40F;
+  --white :#fff;
+  --silver: #ECF0F1;
+  --black:#2C3E50;
+  --Header: 'Oleo Script', cursive;
+  --text: 'Sriracha', cursive;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* ========================================main (App.js)========================================= */
+.main {
+  background-color: var(--silver);
+  min-height: 100vh;
+  text-align: center;
+  width: 100%;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* ========================================container (Home.js)========================================= */
+.container{
+  width: 100%;
+}
+
+.container-header{
+  font-family: var(--Header);
+  font-size: 30px;
+}
+
+.container-header-title{
+  color: var(--black);
+  margin:0px;
+  padding-top: 50px;
+}
+
+.line{
+  width: 100px;
+  height: 4px;
+  background-color: var(--gold);
+  margin: 0px auto 50px;
+
+}
+
+.tabs{
+  margin: 50px auto 100px;
+}
+
+.food-container{
+  text-align: center;
+  display: grid;
+  justify-content: space-evenly;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(250px,500px));
+}
+
+.food-menu{
+  height: 150px;
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px auto 50px;
+  max-width: 800px;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.menu-img{
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  border: 2px solid var(--gold);
+  object-fit: cover;
+}
+
+.food-info{
+  flex: 2;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-left: 10px;
+}
+
+.food-info-head{
+  font-family: var(--text);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 2px solid var(--gold);
+}
+
+.food-info-head-title{
+  margin: 0px;
+  font-size: 20px;
+}
+.food-info-head-price{
+  margin: 0px;
+  color: var(--gold);
+}
+
+.food-info-head-text{
+  margin-top: 5px;
+  font-size: 15px;
+  font-family: var(--text);
+  text-align: left;
+  color: var(--black);
+}
+
+.tabs-btn {
+  margin: 0px 10px;
+  padding: 10px 25px;
+  background-color: var(--gold);
+  border-radius: 5px;
+  font-family: var(--text);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.tabs-btn:hover{
+  background-color: var(--black);
+  color: var(--gold);
+}
+.tabs-btn:active{
+  transform: scale(.97);
+}
